@@ -1,11 +1,12 @@
 import React from 'react'
+import heroImage from '../components/assets/HeroImage.webp';
 
 const Hero = () => {
   return (
     <div className='w-full h-screen'>
       <img 
         className='top-0 left-0 w-full h-screen object-cover' 
-        src={`${process.env.PUBLIC_URL}/assets/HeroImage.webp`} 
+        src={heroImage}  
         alt="Tiny Home Village" 
       />
       <div className='bg-black/30 absolute top-0 left-0 w-full h-screen'/>
