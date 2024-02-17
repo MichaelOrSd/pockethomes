@@ -4,8 +4,6 @@ import communityImage from '../components/assets/Community.webp';
 import sustainabilityImage from '../components/assets/Sustainability.webp';
 import afordabilityImage from '../components/assets/Afordability.webp';
 import marketImage from '../components/assets/Market.webp';
-{/*
-*/}
 
 const Overview = () => {
   return (
