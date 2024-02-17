@@ -1,4 +1,11 @@
 import React from 'react'
+import houseImage from '../components/assets/House.webp';
+import communityImage from '../components/assets/Community.webp';
+import sustainabilityImage from '../components/assets/Sustainability.webp';
+import afordabilityImage from '../components/assets/Afordability.webp';
+import marketImage from '../components/assets/Market.webp';
+{/*
+*/}
 
 const Overview = () => {
   return (
@@ -6,23 +13,23 @@ const Overview = () => {
         {/* Left side */}
         <div className='grid grid-cols-2 grid-rows-6 h-[80vh]'>
             <img className='row-span-3 object-cover w-full h-full p-2' 
-                src={`${process.env.PUBLIC_URL}/assets/House.webp`} 
+                src={houseImage} 
                 alt="Tiny Home Village" 
-            />
+            /> 
             <img className='row-span-2 object-cover w-full h-full p-2' 
-                src={`${process.env.PUBLIC_URL}/assets/Community.webp`} 
+                src={communityImage} 
                 alt="Tiny Home Village" 
-            />
+                />
             <img className='row-span-2 object-cover w-full h-full p-2' 
-                src={`${process.env.PUBLIC_URL}/assets/Sustainability.webp`} 
+                src={sustainabilityImage} 
+                alt="Tiny Home Village" 
+                />
+            <img className='row-span-3 object-cover w-full h-full p-2' 
+                src={afordabilityImage} 
                 alt="Tiny Home Village" 
             />
             <img className='row-span-3 object-cover w-full h-full p-2' 
-                src={`${process.env.PUBLIC_URL}/assets/Afordability.webp`} 
-                alt="Tiny Home Village" 
-            />
-            <img className='row-span-2 object-cover w-full h-full p-2' 
-                src={`${process.env.PUBLIC_URL}/assets/Market.webp`} 
+                src={marketImage} 
                 alt="Tiny Home Village" 
             />
         </div>
