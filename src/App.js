@@ -14,8 +14,8 @@ function App() {
       <Hero />
       <Values />
       <Overview />
-      <ImageSlider />
       <Petition />
+      <ImageSlider />
     </div>
   );
 }

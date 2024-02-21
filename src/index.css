@@ -4,77 +4,51 @@
 
 @layer base {
   button {
-    @apply border py-2 px-3 rounded-full
-  }
-  form{
-    display:grid;
-    grid-template-columns: min-content auto;
-    grid-template-areas: 
-    "first_name_label first_name"
-    "last_name_label last_name"
-    "email_label email"
-    "phone_number_label phone_number"
-    "address_label address"
-    "postal_code_label postal_code"
-    "city_label city"
-    "country_label country"
-    "button button";
-  }
-  form > label {
-    justify-self: flex-start;
-    align-self: center;
-    padding-right:3px;
+    @apply border py-2 px-4 bg-slate-200 text-black rounded-md hover:bg-blue-400;
   }
 
-  label[for="first_name"]{
-    grid-area:first_name_label;
+  .formPetition {
+    @apply gap-y-4 sm:gap-y-2 md:grid-cols-2;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-gap: 8px;
+    grid-template-areas:
+      "first_name_label first_name"
+      "last_name_label last_name"
+      "email_label email"
+      "phone_number_label phone_number"
+      "address_label address"
+      "postal_code_label postal_code"
+      "city_label city"
+      "country_label country"
+      "button button";
   }
-  input[name="first_name"]{
-    grid-area:first_name;
+
+  .formPetition > label {
+    @apply text-gray-800 font-medium;
+    justify-self: flex-end;
+    align-self: center;
+    padding-right: 1rem;
+    white-space: nowrap;
   }
-  label[for="last_name"]{
-    grid-area:last_name_label;
+
+  .formPetition > input, .formPetition > select {
+    @apply border-x-slate-950 rounded-md shadow-md focus:border-blue-800 focus:ring focus:ring-blue-200 focus:ring-opacity-25;
   }
-  input[name="last_name"]{
-    grid-area:last_name;
+
+  .formPetition > button {
+    grid-area: button;
   }
-  label[for="email"]{
-    grid-area:email_label;
-  }
-  input[name="email"]{
-    grid-area:email;
-  }
-  label[for="phone_number"]{
-    grid-area:phone_number_label;
-  }
-  input[name="phone_number"]{
-    grid-area:phone_number;
-  }
-  label[for="address"]{
-    grid-area:address_label;
-  }
-  input[name="address"]{
-    grid-area:address;
-  }
-  label[for="postal_code"]{
-    grid-area:postal_code_label;
-  }
-  input[name="postal_code"]{
-    grid-area:postal_code;
-  }
-  label[for="city"]{
-    grid-area:city_label;
-  }
-  input[name="city"]{
-    grid-area:city;
-  }
-  label[for="country"]{
-    grid-area:country_label;
-  }
-  input[name="country"]{
-    grid-area:country;
-  }
-  form > button {
-    grid-area : button;
+
+  /* Responsive adjustments */
+  @media (max-width: 444px) {
+    .formPetition {
+      grid-template-columns: auto;
+      grid-template-areas:
+        "first_name_label"
+        "first_name"
+        /* Repeat for each field */
+        "button";
+    }
   }
 }
