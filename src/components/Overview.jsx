@@ -1,9 +1,4 @@
 import React from 'react'
-import houseImage from '../components/assets/House.webp';
-import communityImage from '../components/assets/Community.webp';
-import sustainabilityImage from '../components/assets/Sustainability.webp';
-import afordabilityImage from '../components/assets/Afordability.webp';
-import marketImage from '../components/assets/Market.webp';
 
 const Overview = () => {
   return (
@@ -11,23 +6,23 @@ const Overview = () => {
         {/* Left side */}
         <div className='grid grid-cols-2 grid-rows-6 h-[80vh]'>
             <img className='row-span-3 object-cover w-full h-full p-2' 
-                src={houseImage} 
+                src="https://pocket-homes.s3.us-east-2.amazonaws.com/assets/House.webp" 
                 alt="Tiny Home Village" 
             /> 
             <img className='row-span-2 object-cover w-full h-full p-2' 
-                src={communityImage} 
+                src="https://pocket-homes.s3.us-east-2.amazonaws.com/assets/Community.webp" 
                 alt="Tiny Home Village" 
                 />
             <img className='row-span-2 object-cover w-full h-full p-2' 
-                src={sustainabilityImage} 
+                src="https://pocket-homes.s3.us-east-2.amazonaws.com/assets/Sustainability.webp"
                 alt="Tiny Home Village" 
                 />
             <img className='row-span-3 object-cover w-full h-full p-2' 
-                src={afordabilityImage} 
+                src="https://pocket-homes.s3.us-east-2.amazonaws.com/assets/Afordability.webp" 
                 alt="Tiny Home Village" 
             />
             <img className='row-span-3 object-cover w-full h-full p-2' 
-                src={marketImage} 
+                src="https://pocket-homes.s3.us-east-2.amazonaws.com/assets/Market.webp" 
                 alt="Tiny Home Village" 
             />
         </div>
