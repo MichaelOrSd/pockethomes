@@ -10,7 +10,6 @@
   .formPetition {
     @apply gap-y-4 sm:gap-y-2 md:grid-cols-2;
     display: grid;
-    grid-template-columns: min-content auto;
     grid-gap: 8px;
     grid-template-areas:
       "first_name_label first_name"
@@ -24,30 +23,20 @@
       "button button";
   }
 
-  .formPetition > label {
-    @apply text-gray-800 font-medium;
-    justify-self: flex-end;
-    align-self: center;
-    padding-right: 1rem;
-    white-space: nowrap;
-  }
-
   .formPetition > input, .formPetition > select {
-    @apply border-x-slate-950 rounded-md shadow-md focus:border-blue-800 focus:ring focus:ring-blue-200 focus:ring-opacity-25;
+    @apply border border-slate-400 rounded-md focus:border-slate-400 focus:ring focus:ring-blue-200 focus:ring-opacity-25;
   }
 
   .formPetition > button {
     grid-area: button;
+    border: 1px solid #111111;
   }
 
-  /* Responsive adjustments */
   @media (max-width: 444px) {
     .formPetition {
       grid-template-columns: auto;
       grid-template-areas:
-        "first_name_label"
         "first_name"
-        /* Repeat for each field */
         "button";
     }
   }

@@ -21,22 +21,22 @@ const Petition = () => {
             .then((r) => r.text())
             .then((v) => console.log(v))
         }} className="formPetition">
-          <label htmlFor="first_name" className="first_name_label">First Name</label>
-          <input type="text" name="first_name" className="first_name" />
-          <label htmlFor="last_name" className="last_name_label">Last Name</label>
-          <input type="text" name="last_name" className="last_name" />
-          <label htmlFor="email" className="email_label">Email</label>
-          <input type="text" name="email" className="email" />
-          <label htmlFor="phone_number" className="phone_number_label">Phone Number</label>
-          <input type="text" name="phone_number" className="phone_number" />
+          {/* <label htmlFor="first_name" className="first_name_label">First Name</label> */}
+          <input placeholder=" First Name" type="text" name="first_name" className="first_name" />
+          {/* <label htmlFor="last_name" className="last_name_label">Last Name</label> */}
+          <input placeholder=" Last Name"type="text" name="last_name" className="last_name" />
+          {/* <label htmlFor="email" className="email_label">Email</label> */}
+          <input placeholder=" Email"type="text" name="email" className="email" />
+          {/*<label htmlFor="phone_number" className="phone_number_label">Phone Number</label>
+          <input placeholder=" Phone Number" type="text" name="phone_number" className="phone_number" />
           <label htmlFor="address" className="address_label">Address</label>
-          <input type="text" name="address" className="address" />
+          <input placeholder=" Address" type="text" name="address" className="address" />
           <label htmlFor="postal_code" className="postal_code_label">Postal Code</label>
-          <input type="text" name="postal_code" className="postal_code" />
-          <label htmlFor="city" className="city_label">City</label>
-          <input type="text" name="city" className="city" />
-          <label htmlFor="country" className="country_label">Country</label>
-          <input type="text" name="country" className="country" />
+      <input placeholder=" Postal Code" type="text" name="postal_code" className="postal_code" />*/}
+          {/* <label htmlFor="city" className="city_label">City</label> */}
+          <input placeholder=" City" type="text" name="city" className="city" />
+          {/*<label htmlFor="country" className="country_label">Country</label>
+          <input placeholder=" Country" type="text" name="country" className="country" />*/}
           <button type="submit" className="button">Submit!</button>
         </form>
 
