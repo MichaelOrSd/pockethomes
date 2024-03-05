@@ -20,13 +20,13 @@ const Petition = () => {
           fetch(FORM_HANDLER_SERVICE_URL, {method: "POST", headers: {'Content-Type' : 'application/json'}, body: JSON.stringify(form_data)})
             .then((r) => r.text())
             .then((v) => console.log(v))
-        }} className="formPetition">
+      }} className="grid grid-cols-1 gap-x-4 gap-y-4 sm:grid-cols-2 [&>input]:border-solid [&>input]:border-2 [&>*]:rounded [&>input]:h-10 [&>input]:border-gray-600 [&>button]:col-span-1 [&>button]:sm:col-span-2">
           {/* <label htmlFor="first_name" className="first_name_label">First Name</label> */}
-          <input placeholder=" First Name" type="text" name="first_name" className="first_name" />
+          <input placeholder=" First Name" type="text" name="first_name"/>
           {/* <label htmlFor="last_name" className="last_name_label">Last Name</label> */}
-          <input placeholder=" Last Name"type="text" name="last_name" className="last_name" />
+          <input placeholder=" Last Name"type="text" name="last_name" />
           {/* <label htmlFor="email" className="email_label">Email</label> */}
-          <input placeholder=" Email"type="text" name="email" className="email" />
+          <input placeholder=" Email"type="text" name="email" />
           {/*<label htmlFor="phone_number" className="phone_number_label">Phone Number</label>
           <input placeholder=" Phone Number" type="text" name="phone_number" className="phone_number" />
           <label htmlFor="address" className="address_label">Address</label>
@@ -34,7 +34,7 @@ const Petition = () => {
           <label htmlFor="postal_code" className="postal_code_label">Postal Code</label>
       <input placeholder=" Postal Code" type="text" name="postal_code" className="postal_code" />*/}
           {/* <label htmlFor="city" className="city_label">City</label> */}
-          <input placeholder=" City" type="text" name="city" className="city" />
+          <input placeholder=" City" type="text" name="city" />
           {/*<label htmlFor="country" className="country_label">Country</label>
           <input placeholder=" Country" type="text" name="country" className="country" />*/}
           <button className="border-black bg-teal-600 text-white hover:shadow-xl" type="submit" >Submit!</button>

@@ -7,7 +7,7 @@
     @apply border py-2 px-4 bg-teal-600 text-white rounded-md hover:bg-teal-800;
   }
 
-  .formPetition {
+  /* .formPetition {
     @apply gap-y-4 sm:gap-y-2 md:grid-cols-2;
     display: grid;
     grid-gap: 8px;
@@ -15,11 +15,11 @@
       "first_name_label first_name"
       "last_name_label last_name"
       "email_label email"
-      /* "phone_number_label phone_number"
+      / "phone_number_label phone_number"
       "address_label address"
       "postal_code_label postal_code"
       "city_label city"
-      "country_label country" */
+      "country_label country" /
       "button button";
   }
 
@@ -42,5 +42,5 @@
         "city"
         "button";
     }
-  }
+  } */
 }
