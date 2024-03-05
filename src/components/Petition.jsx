@@ -37,7 +37,7 @@ const Petition = () => {
           <input placeholder=" City" type="text" name="city" className="city" />
           {/*<label htmlFor="country" className="country_label">Country</label>
           <input placeholder=" Country" type="text" name="country" className="country" />*/}
-          <button type="submit" className="button">Submit!</button>
+          <button className="border-black bg-teal-600 text-white hover:shadow-xl" type="submit" >Submit!</button>
         </form>
 
         </div>  
