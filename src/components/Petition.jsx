@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FORM_HANDLER_SERVICE_URL = "http://PocketHomesBackend-env-1.eba-deqwwwvu.us-east-2.elasticbeanstalk.com"; 
+const FORM_HANDLER_SERVICE_URL = "https://diftxiihiaqqcholvm2qe4cb3a0ipmgb.lambda-url.us-east-2.on.aws/"; 
 
 const Petition = () => {
   return (
