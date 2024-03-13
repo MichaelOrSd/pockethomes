@@ -32,7 +32,7 @@ const Overview = () => {
             <p className='text-2xl py-6'>This project aims to support community living while prioritizing sustainability and affordability.</p>
             <p className='pb-6'>In this concept art, one can see the focus on alternative housing, community living, sustainable renewable energy, as well as a local marketplace and community yurts for services provided by community members and public members.</p>
         <div>
-            <button className='border-black bg-teal-600 text-white hover:shadow-xl'>Join Newsletter</button>
+            <button className='border py-2 px-4 rounded-md hover:bg-teal-800 border-black bg-teal-600 text-white hover:shadow-xl'>Join Newsletter</button>
         </div>
         </div>
     </div>
