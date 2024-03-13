@@ -10,10 +10,10 @@ const Petition = () => {
   const errorOutputRef = useRef();
 
   return (
-    <div className='max-w-[1000px] h-[500px] mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%] px-4 grid lg:grid-cols-1 gap-4'>
+    <div className='max-w-[1000px] h-[480px] mx-auto my-36 pt-16 lg:mb-[20%] md:mb-[35%] px-4 grid lg:grid-cols-1 gap-4'>
         <div>
-            <h2 className='text-6xl font-bold mb-4'>Support This Project</h2>
-            <p className='text-xl'>Sign this petition to demonstrate your support for our initiative, dedicated to fostering a community-oriented, sustainable, and affordable housing environment. Together, we can make a meaningful difference.</p>
+            <h2 className='text-6xl font-bold mb-4'>Back This Project</h2>
+            <p className='text-xl'>By adding your name to this form you demonstrate your support for our initiative, dedicated to fostering a community-oriented, sustainable, and affordable housing environment. Together, we can make a meaningful difference.</p>
         </div>  
         <div>
         <form onSubmit={async (e) => {
@@ -30,8 +30,6 @@ const Petition = () => {
           // }
           // console.log(form_data);
           
-
-
           const response = await fetch(FORM_HANDLER_SERVICE_URL, {method: "POST", headers: {'Content-Type' : 'text/plain', 'Origin' : window.location.href}, body: JSON.stringify(form_data_json)})
           // console.log(await response.text())
           const response_json = await response.json();
