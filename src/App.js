@@ -15,7 +15,7 @@ function App() {
       <Values />
       <Overview />
       <Petition />
-      {/* <ImageSlider /> */}
+      <ImageSlider />
     </div>
   );
 }
